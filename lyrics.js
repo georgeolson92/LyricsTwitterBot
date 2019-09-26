@@ -70,7 +70,7 @@ var songSentences = [
     "You can see my [bodypart] burning in the distance\nBaby, baby, baby, I’m your [noun]",
     "[season]time, and the livin’s [adjective]\n[person]’s on the microphone with [person]",
     "[taste] in my [bodypart]\nFrom your kiss\nYou're [verbing] me",
-    "We were so obsessed with [verbing] the next best [noun]\n‘Cause we were just that [adjective]",
+    "We were so obsessed with [verbing] the next best American [noun]\n‘Cause we were just that [adjective]",
     "If he’s a [noun], then what’s the worst that can happen to [nounarticle] who’s already [adjective]?",
     "Got my [color] nail polish on \nIt's my favorite color and my favorite tone of [noun]",
     "Be young, be dope, be proud, like [nounarticle]",
