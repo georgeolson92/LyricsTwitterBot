@@ -76,7 +76,7 @@ var songSentences = [
     "Be young, be dope, be proud, like [nounarticle]",
     "Down on [place] they got a saying: \n'If you're not [verbing], then you're not [verbing]'",
     "Because you're young, you're wild, you're free \nYou're [verbing] [nouns] around me",
-    "[noun] is the anthem of success, so put on [noun], and your [clothing]",
+    "Money is the anthem of success \nSo put on [noun], and your [clothing]",
     "All I wanna do is get [adjective] by the beach",
     "I'm in his favorite [clothing]\nWatching me get undressed\nTake that [bodypartsingular] downtown"
 ];
