@@ -52,7 +52,6 @@ function generateStatus() {
     var sentenceTemplate = sentenceTemplate.replace("[adjective]", adjectives[Math.floor(Math.random() * adjectives.length)]);
     var sentenceTemplate = sentenceTemplate.replace("[verb]", verbs[Math.floor(Math.random() * verbs.length)]);
     var sentenceTemplate = sentenceTemplate.replace("[verbed]", verbsPastTense[Math.floor(Math.random() * verbsPastTense.length)]);
-    var sentenceTemplate = sentenceTemplate.replace("[color]", colors[Math.floor(Math.random() * colors.length)]);
     var sentenceTemplate = sentenceTemplate.replace("[place]", places[Math.floor(Math.random() * places.length)]);
     var sentenceTemplate = sentenceTemplate.replace("[exclamation]", exclamations[Math.floor(Math.random() * exclamations.length)]);
     var sentenceTemplate = sentenceTemplate.replace("[bodypart]", bodyparts[Math.floor(Math.random() * bodyparts.length)]);
@@ -103,6 +102,15 @@ function generateStatus() {
 
     for (i = 0; i < verbPluralIndices.length; i++) {
         var sentenceTemplate = sentenceTemplate.replace("[verbing]", verbsPresentParticiple[Math.floor(Math.random() * verbsPresentParticiple.length)]);
+    }
+
+    var regex = /[color]/gi, result, colorIndices = [];
+    while ( (result = regex.exec(sentenceTemplate)) ) {
+        colorIndices.push(result.index);
+    }
+
+    for (i = 0; i < colorIndices.length; i++) {
+        var sentenceTemplate = sentenceTemplate.replace("[color]", colors[Math.floor(Math.random() * colors.length)]);
     }
 
     
