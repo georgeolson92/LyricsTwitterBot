@@ -6,9 +6,15 @@ var Twitter = new twit(config);
 
 var statusToPost = generateStatus();
 
-setInterval(Twitter.post('statuses/update', { status: statusToPost }, function(err, data, response) {
-    console.log(data)
-  }), 1800000);
+var post = function() {
+    Twitter.post('statuses/update', { status: statusToPost }, function(err, data, response) {
+        console.log(data)
+      });
+}
+
+post();
+
+setInterval(post, 1800000);
 
 
 function generateStatus() { 
