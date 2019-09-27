@@ -14,7 +14,7 @@ var post = function() {
 
 post();
 
-setInterval(post, 1800000);
+setInterval(post, 3000000);
 
 
 function generateStatus() { 
